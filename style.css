@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#FFFDD0;
+}
+
+.heroSection{
+    width: fit-content;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.18);
+}
+
+#image{
+    border-radius: 20px 0px 0px 20px;
+    width: 400px;
+    height: 100%;
+}
+
+.detailSection{
+    padding: 40px;
+    height: 100%;
+    width: 300px;
+}
+
+.title{
+    color: rgb(53, 49, 49);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.productName{
+    font-size: 50px;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 30px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.911);
+}
+
+.description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(53, 49, 49);
+    margin-bottom: 40px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.productPrice{
+    font-size: 55px;
+    font-family: 'Fraunces', serif;
+    color: #0f6657;
+}
+
+.lastPrice{
+    color: rgb(53, 49, 49);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    text-decoration: line-through;
+}
+
+.cart{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f6657;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;    
+}
+
+.material-symbols-outlined{
+    margin-right: 10px;
+}
+
+@media (max-width:600px){
+    .heroSection{
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .imageSection{
+        height: 430px;
+    }
+
+    #image{
+        border-radius: 0px;
+        object-fit: cover;
+    }
+}
